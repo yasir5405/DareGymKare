@@ -1,3 +1,4 @@
+// Lenis
 const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
@@ -12,9 +13,14 @@ gsap.ticker.add((time)=>{
 
 gsap.ticker.lagSmoothing(0)
 
+// Custom Cursor
+const cursor = document.querySelector('.cursor');
+window.addEventListener('mousemove', (e) => {
+    cursor.style.left = `${e.x}px`;
+    cursor.style.top =  `${e.y}px`;
+})
 
-// Above Lenis
-
+// Hover Active
 var elemC = document.querySelector('.elem-container')
 var fixedImage = document.querySelector('.fixed-image')
 elemC.addEventListener('mouseenter', () => {
@@ -51,7 +57,7 @@ if(headings.length > 0){
 
 
 console.log(text.innerHTML);
-
+// 4th Page
 headings.forEach((heading) => {
   let img = heading.getAttribute('data-image');
   let text1 = heading.getAttribute('data-text');
@@ -67,3 +73,57 @@ headings.forEach((heading) => {
     heading.style.setProperty('--before-color', 'white')
   })
 });
+
+
+// Login
+const wrapper = document.querySelector('.wrapper');
+const loginLink = document.querySelector('.login-link');
+const registerLink = document.querySelector('.register-link');
+const btnPopup = document.querySelector('.btnLogin-popup')
+const iconClose = document.querySelector('.icon-close');
+
+registerLink.addEventListener('click', () => {
+  wrapper.classList.add('active');
+})
+loginLink.addEventListener('click', () => {
+  wrapper.classList.remove('active');
+})
+btnPopup.addEventListener('click', (e) => {
+  e.preventDefault();
+  wrapper.classList.add('active-popup');
+})
+iconClose.addEventListener('click', () => {
+  wrapper.classList.remove('active-popup');
+})
+
+// SwiperJS
+const swiperAnimation = () => {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 100,
+  });
+}
+swiperAnimation();
+
+// Custom Cursor for Swiper
+const customCursor = document.querySelector('.swiper-custom-cursor');
+const swiperDiv = document.querySelector('.swiper');
+swiperDiv.addEventListener('mouseenter', (e) => {
+  customCursor.style.transform = 'scale(1)'
+  cursor.style.display = 'none';
+})
+swiperDiv.addEventListener('mouseleave', () => {
+  customCursor.style.transform = 'scale(0)'
+  cursor.style.display = 'initial';
+})
+
+swiperDiv.addEventListener('mousemove', (event) => {
+  const rect = swiperDiv.getBoundingClientRect();
+  const x = event.clientX - rect.left;
+  const y = event.clientY - rect.top;
+  customCursor.style.left = `${x}px`;
+  customCursor.style.top = `${y}px`;
+});
+
+// Footer

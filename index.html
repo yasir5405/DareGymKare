@@ -6,17 +6,15 @@
     <title>Dare Gym Kare</title>
     <link rel="shortcut icon" href="./android-chrome-512x512.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.11/dist/lenis.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="fixed-image">
-        
-    </div>
+    <div class="fixed-image"></div>
 
     <div id="main">
-        <!-- <div id="footer">
-            <h1>Sundown</h1>
-        </div> -->
+        <!-- Custom Cursor -->
+        <div class="cursor"></div>
 
         <div id="page1">
             <nav>
@@ -25,7 +23,7 @@
                     <h4><a href="#">Work</a></h4>
                     <h4><a href="#">Studio</a></h4>
                     <h4><a href="#">Contact</a></h4>
-                    <h4><a href="#">Login</a></h4>
+                    <h4><a href="#" class="btnLogin-popup">Login</a></h4>
                 </div>
             </nav>
             <div class="center">
@@ -156,18 +154,161 @@
         </div>
 
         <div id="page5">
-
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Add 'What do we offer' -->
+                    <div class="swiper-details">
+                        <h1>What we offer</h1>
+                    </div>
+                  <div class="swiper-slide">
+                    <img src="nike.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Officia eveniet deserunt unde fuga <br> distinctio numquam officiis natus <br> illo exercitationem accusamus sdfdsf dsfdsfdsf bsdhbh <br> hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="nike.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Officia eveniet deserunt unde fuga <br> distinctio numquam officiis natus <br> illo exercitationem accusamus sdfdsf dsfdsfdsf bsdhbh <br> hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="nike.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Officia eveniet deserunt unde fuga <br> distinctio numquam officiis natus <br> illo exercitationem accusamus sdfdsf dsfdsfdsf bsdhbh <br> hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="nike.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Officia eveniet deserunt unde fuga <br> distinctio numquam officiis natus <br> illo exercitationem accusamus sdfdsf dsfdsfdsf bsdhbh <br> hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="nike.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Officia eveniet deserunt unde fuga <br> distinctio numquam officiis natus <br> illo exercitationem accusamus sdfdsf dsfdsfdsf bsdhbh <br> hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="nike.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Officia eveniet deserunt unde fuga <br> distinctio numquam officiis natus <br> illo exercitationem accusamus sdfdsf dsfdsfdsf bsdhbh <br> hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb.</p>
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="nike.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Officia eveniet deserunt unde fuga <br> distinctio numquam officiis natus <br> illo exercitationem accusamus sdfdsf dsfdsfdsf bsdhbh <br> hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb  hbhbh bhbhhb bhbhbhb.</p>
+                  </div>
+                </div>
+                <div class="swiper-custom-cursor">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </div>
         </div>
 
-        <div id="page6">
+        <div id="page6"></div>
 
+        <!-- LoginForm -->
+        <div class="wrapper-container">
+            <div class="wrapper">
+                <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon">
+                                <ion-icon name="mail"></ion-icon>
+                            </span>
+                            <input type="text" name="username" id="" required>
+                            <label for="email">Username</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <ion-icon name="lock-closed"></ion-icon>
+                            </span>
+                            <input type="password" name="pass" id="" required>
+                            <label for="email">Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label for=""><input type="checkbox"> Remember me</label>
+                            <a href="#">Forgot Password</a>
+                        </div>
+                        <button type="submit" class="btn">Login</button>
+                        <div class="login-register">
+                            <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+        
+                <div class="form-box register">
+                    <h2>Register</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon">
+                                <ion-icon name="mail"></ion-icon>
+                            </span>
+                            <input type="text" name="username" id="" required>
+                            <label for="email">Username</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <ion-icon name="lock-closed"></ion-icon>
+                            </span>
+                            <input type="password" name="password1" id="" required>
+                            <label for="">Password</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon">
+                                <ion-icon name="lock-closed"></ion-icon>
+                            </span>
+                            <input type="password" name="password2" id="" required>
+                            <label for="">Confirm Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label for=""><input type="checkbox"> Agree to the terms & conditions</label>
+                        </div>
+                        <button type="submit" class="btn">Register</button>
+                        <div class="login-register">
+                            <p>Already a user? <a href="#" class="login-link">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div id="footer">
+        <div class="footer-div">
+            <div class="footer-links">
+                <a class="footerLink" href="#">Work</a>
+                <a class="footerLink" href="#">Studio</a>
+                <a class="footerLink" href="#">Contact</a>
+            </div>
+            <div class="get-email">
+                <p>Get industry insights and creative <br> inspiration straight to your inbox.</p>
+                <input type="email" placeholder="Email address">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+        </div>
+        <h1>DareGymKare</h1>
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>Copyright © DareGymKare</p>
+            </div>
+            <div class="location">
+                <ion-icon name="globe-outline"></ion-icon>
+                <p>Rajpura, Punjab</p>
+            </div>
+            <div class="instagram">
+                <a href="#">Instagram</a>
+            </div>
+            <div class="linkedin">
+                <a href="#">LinkedIn</a>
+            </div>
         </div>
     </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Lenis -->
     <script src="https://unpkg.com/lenis@1.1.11/dist/lenis.min.js"></script> 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
