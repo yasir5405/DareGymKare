@@ -927,10 +927,18 @@ nav h3{
     height: 50%;
     width: 100%;
     background: #EFEAE3;
-    border-radius: 30px;
+    color: black;
+    /* border-radius: 30px; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+
 }
 .full-div1 h1{
+    z-index: 9;
     color: black;
+    /* display: block; */
 }
 /* .loader{
     height: 100vh;
@@ -1001,12 +1009,57 @@ nav h3{
     } 
     nav h3{
         display: initial;
-        padding: 3vw 5vw;
+        height: 10vw;
+        padding: 0vw 8vw;
+        width: 25vw;
         border: 1px solid #ababab;
         border-radius: 50px;
         font-size: 4vw;
         font-weight: 200;
         padding-left: 10vw;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+    .firstline{
+        height: 2px;
+        width: 25px;
+        background: #000;
+        transition: 0.5s ease;
+        /* position: absolute; */
+        /* display: none; */
+    }
+    .secondline{
+        height: 2px;
+        width: 25px;
+        background: #000;
+        transition: 0.5s ease;
+        /* display: none; */
+    }
+    .firstline.active{
+        rotate: -45deg;
+        gap: 0;
+        position: absolute;
+        /* transform: translate(-50%, -50%); */
+    }
+    .secondline.active{
+        rotate: 45deg;
+        gap: 0;
+        /* transform: translate(-50%, -50%); */
+    }
+    .cross{
+        height: 30px;
+        width: 30px;
+        position: relative;
+        /* outline: auto; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
     }
     .center{
         height: 52vh;
@@ -1502,5 +1555,24 @@ nav h3{
     .linkedin a:hover::before{
         transform: scale(1);
         transform-origin: left;
+    }
+    .full-div1{
+        padding: 0vw 4vw;
+    }
+    .full-div1 h1{
+        color: black;
+        z-index: 1000;
+        display: initial;
+        font-size: 12vw;
+    }
+    .menu-links{
+        padding-top: 110px;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column; 
+        cursor: pointer;
     }
 }

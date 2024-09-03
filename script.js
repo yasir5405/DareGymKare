@@ -153,6 +153,23 @@ menu.addEventListener('click', () => {
   }
 })
 
+const firstLine = document.querySelector('.firstline');
+const secondLine = document.querySelector('.secondline');
+var flag1 = 0;
+menu.addEventListener('click', () => {
+  if(flag1 == 0){
+    firstLine.classList.add('active')
+    secondLine.classList.add('active')
+    flag1=1;
+  }
+  else{
+    firstLine.classList.remove('active')
+    secondLine.classList.remove('active')
+    flag1=0;
+  }
+})
+
+
 // Loader Animation
 const loader = document.querySelector('.loader');
 setTimeout(() => {
