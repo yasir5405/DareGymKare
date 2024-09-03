@@ -987,6 +987,9 @@ nav h3{
 
 /* Responsive */
 @media (max-width:600px) {
+    .cursor{
+        display: none;
+    }
     body{
         overflow-x: hidden;
     }
@@ -1223,7 +1226,7 @@ nav h3{
     .elem img{
         /* border: 2px solid black; */
         height: 500px;
-        width: 400px;
+        width: 365px;
         z-index: 9;
         border-radius: 15px;
         display: initial;
