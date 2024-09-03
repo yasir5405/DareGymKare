@@ -2,7 +2,7 @@
 const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
-  console.log(e)
+  // console.log(e)
 })
 
 lenis.on('scroll', ScrollTrigger.update)
@@ -102,6 +102,7 @@ const swiperAnimation = () => {
     slidesPerView: "auto",
     centeredSlides: true,
     spaceBetween: 100,
+    loop: false,
   });
 }
 swiperAnimation();
@@ -126,4 +127,52 @@ swiperDiv.addEventListener('mousemove', (event) => {
   customCursor.style.top = `${y}px`;
 });
 
-// Footer
+const page4 = document.querySelector('.page4-container');
+page4.addEventListener('mouseenter', () => {
+  cursor.style.border = '2px solid white';
+})
+page4.addEventListener('mouseleave', () => {
+  cursor.style.border = '2px solid black';
+});
+
+// Responsive part
+// Hamburger
+const menu = document.querySelector('nav h3');
+const full = document.querySelector('#full-scr');
+const navImg = document.querySelector('nav img')
+var flag = 0;
+menu.addEventListener('click', () => {
+  if(flag == 0){
+    navImg.style.opacity = 0;
+    full.style.top = 0;
+    flag = 1;
+  }else{
+    navImg.style.opacity = 1;
+    full.style.top = '-100%';
+    flag = 0;
+  }
+})
+
+// Loader Animation
+const loader = document.querySelector('.loader');
+setTimeout(() => {
+  loader.style.top = '-100%'
+}, 4000);
+
+// Responsive FOr elems
+const resElem = document.querySelectorAll('.elem')
+const src = document.querySelectorAll('.elem img')
+console.log(src)
+resElem.forEach((elems) => {
+    // Get the 'data-image' attribute value from the current '.elem' element
+    const image = elems.getAttribute('data-image');
+  
+    // Find the first <img> child element inside the current '.elem'
+    const imgElement = elems.querySelector('img');
+    
+    // If an <img> element is found and 'data-image' has a value
+    if (imgElement && image) {
+      // Set the 'src' attribute of the <img> element to the value of 'data-image'
+      imgElement.setAttribute('src', image);
+    }
+})
