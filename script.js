@@ -55,8 +55,6 @@ if(headings.length > 0){
   text.textContent = firstText;
 }
 
-
-console.log(text.innerHTML);
 // 4th Page
 headings.forEach((heading) => {
   let img = heading.getAttribute('data-image');

@@ -926,7 +926,7 @@ nav h3{
     width: 100%;
     background: #00000070;
     position: fixed;
-    top: -100%;
+    top: -150%;
     z-index: 99;
     transition: 0.5s ease;
 }
