@@ -173,7 +173,7 @@ menu.addEventListener('click', () => {
 // Loader Animation
 const loader = document.querySelector('.loader');
 setTimeout(() => {
-  loader.style.top = '-100%'
+  loader.style.top = '-150%'
 }, 4000);
 
 // Responsive FOr elems
