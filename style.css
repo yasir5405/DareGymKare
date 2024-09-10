@@ -398,6 +398,7 @@ nav img{
     display: none;
     background-size: cover;
     background-position: center;
+    pointer-events: none;
 }
 .texts{
     z-index: 2;

@@ -172,7 +172,10 @@ menu.addEventListener('click', () => {
 const loader = document.querySelector('.loader');
 setTimeout(() => {
   loader.style.top = '-150%'
-}, 4000);
+}, 3600);
+setTimeout(() => {
+  loader.style.display = 'none'
+}, 4200);
 
 // Responsive FOr elems
 const resElem = document.querySelectorAll('.elem')
