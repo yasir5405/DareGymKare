@@ -16,8 +16,11 @@ gsap.ticker.lagSmoothing(0)
 // Custom Cursor
 const cursor = document.querySelector('.cursor');
 window.addEventListener('mousemove', (e) => {
-    cursor.style.left = `${e.x}px`;
-    cursor.style.top =  `${e.y}px`;
+  const x = e.clientX - cursor.offsetWidth / 2;
+  const y = e.clientY - cursor.offsetHeight /2;
+  cursor.style.transform = `translate(${x}px, ${y}px)`
+    // cursor.style.left = `${e.x}px`;
+    // cursor.style.top =  `${e.y}px`;
 })
 
 // Hover Active

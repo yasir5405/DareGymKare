@@ -36,6 +36,7 @@ html, body{
     position: fixed;
     z-index: 999999;
     transition: top linear 0.2s, left linear 0.2s;
+    pointer-events: none;
 }
 #main{
     position: relative;
