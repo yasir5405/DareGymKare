@@ -26,10 +26,11 @@
             <nav>
                 <img src="new_logo-removebg-preview.png" alt="">
                 <div class="nav-part2">
-                    <h4><a href="#">Courses</a></h4>
+                    <h4><a href="/pages/courses/courses.html">Courses</a></h4>
+                    <h4><a href="/pages/products/courses.html">Products</a></h4>
                     <h4><a href="#">Trainers</a></h4>
-                    <h4><a href="#">Products</a></h4>
                     <h4><a href="#" class="btnLogin-popup">Login</a></h4>
+                    <h4 class="logout"><a href="#">Logout</a></h4>
                 </div>
                 <h3>
                     <div class="cross">
@@ -225,20 +226,21 @@
         
                 <div class="form-box login">
                     <h2>Login</h2>
-                    <form action="#">
+                    <form id="login-form">
                         <div class="input-box">
                             <span class="icon">
                                 <ion-icon name="mail"></ion-icon>
                             </span>
-                            <input type="text" name="username" id="" required>
+                            <input type="text" name="username" id="loginUsername" required>
                             <label for="email">Username</label>
                         </div>
                         <div class="input-box">
                             <span class="icon">
                                 <ion-icon name="lock-closed"></ion-icon>
                             </span>
-                            <input type="password" name="pass" id="" required>
+                            <input class="passwordInput" type="password" name="pass" id="loginPassword" required>
                             <label for="email">Password</label>
+                            <ion-icon class="eye" name="eye-outline"></ion-icon>
                         </div>
                         <div class="remember-forgot">
                             <label for=""><input type="checkbox"> Remember me</label>
@@ -253,30 +255,32 @@
         
                 <div class="form-box register">
                     <h2>Register</h2>
-                    <form action="#">
+                    <form id="register-form">
                         <div class="input-box">
                             <span class="icon">
                                 <ion-icon name="mail"></ion-icon>
                             </span>
-                            <input type="text" name="username" id="" required>
+                            <input type="text" name="username" id="registerUsername" required>
                             <label for="email">Username</label>
                         </div>
                         <div class="input-box">
                             <span class="icon">
                                 <ion-icon name="lock-closed"></ion-icon>
                             </span>
-                            <input type="password" name="password1" id="" required>
+                            <input class="passwordInput1"  type="password" name="password1" id="registerPassword" required>
                             <label for="">Password</label>
+                            <ion-icon class="eye1 eye" name="eye-outline"></ion-icon>
                         </div>
                         <div class="input-box">
                             <span class="icon">
                                 <ion-icon name="lock-closed"></ion-icon>
                             </span>
-                            <input type="password" name="password2" id="" required>
+                            <input class="passwordInput2" type="password" name="password2" id="confirmPassword" required>
                             <label for="">Confirm Password</label>
+                            <ion-icon class="eye2 eye" name="eye-outline"></ion-icon>
                         </div>
                         <div class="remember-forgot">
-                            <label for=""><input type="checkbox"> Agree to the terms & conditions</label>
+                            <label for=""><input id="agree" type="checkbox"> Agree to the terms & conditions</label>
                         </div>
                         <button type="submit" class="btn">Register</button>
                         <div class="login-register">
@@ -290,9 +294,9 @@
         <div id="full-scr">
             <div class="full-div1">
                 <div class="menu-links">
-                    <h1>COURSES</h1>
-                <h1>TRAINERS</h1>
-                <h1>PRODUCTS</h1>
+                    <a href="/pages/courses/courses.html"><h1>COURSES</h1></a>
+                    <a href="#"><h1>TRAINERS</h1></a>
+                    <a href="#"><h1>PRODUCTS</h1></a>
                 </div>
             </div>
         </div>
@@ -339,5 +343,6 @@
     <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script src="userRegistration.js"></script>
 </body>
 </html>

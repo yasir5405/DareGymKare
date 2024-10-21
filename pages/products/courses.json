@@ -1,0 +1,170 @@
+[
+    {
+        "imgSrc": "./images/apparel.jpg",
+        "title": "Fitness Apparel",
+        "price": "$10 - $20",
+        "rating": "⭐⭐⭐⭐⭐",
+        "learnMore" : "#",
+        "features": {
+            "1": "Comfort",
+            "2": "Breathability",
+            "3": "Moisture-wicking",
+            "4": "Durability",
+            "5": "Style"
+        }
+    },
+    {
+        "imgSrc": "./images/equipment.avif",
+        "title": "Workout Equipment",
+        "price": "$100",
+        "rating": "⭐⭐⭐⭐",
+        "learnMore" : "#",
+        "features": {
+            "1": "Dumbbells",
+            "2": "Kettlebells",
+            "3": "Resistance bands",
+            "4": "Medicine balls",
+            "5": "Jump ropes"
+        }
+    },
+    {
+        "imgSrc": "./images/supplement.avif",
+        "title": "Supplements & Nutrition",
+        "price": "$50-$70",
+        "rating": "⭐⭐⭐⭐",
+        "learnMore" : "#",
+        "features": {
+            "1": "Protein",
+            "2": "Creatine",
+            "3": "BCAAs",
+            "4": "Pre-workout",
+            "5": "Post-workout"
+        }
+    },
+    {
+        "imgSrc": "./images/accessory.jpg",
+        "title": "Gym Accessories",
+        "price": "$10-$40",
+        "rating": "⭐⭐⭐⭐⭐",
+        "learnMore" : "#", 
+        "features": {
+            "1": "Gloves",
+            "2": "Belts",
+            "3": "Wrist wraps",
+            "4": "Lifting straps",
+            "5": "Chalk"
+        }
+    },
+    {
+        "imgSrc": "./images/merch.webp",
+        "title": "Branded Merchandise",
+        "price": "$50-$100",
+        "rating": "⭐⭐⭐⭐⭐",
+        "learnMore" : "#",
+        "features": {
+            "1": "T-shirts",
+            "2": "Hoodies",
+            "3": "Hats",
+            "4": "Water bottles",
+            "5": "Bags"
+        }
+    },
+    {
+        "imgSrc": "./images/wellness.jpg",
+        "title": "Health & Wellness Products",
+        "price": "$50-$100",
+        "rating": "⭐⭐⭐⭐",
+        "learnMore" : "#",
+        "features": {
+            "1": "Vitamins",
+            "2": "Supplements",
+            "3": "Essential oils",
+            "4": "Skincare",
+            "5": "Haircare"
+        }
+    },
+    {
+        "imgSrc": "./images/home-gym.webp",
+        "title": "Advanced Home Gym Equipment",
+        "price": "$100-$1000",
+        "rating": "⭐⭐⭐⭐",
+        "learnMore" : "#",
+        "features": {
+            "1": "Treadmills",
+            "2": "Ellipticals",
+            "3": "Exercise bikes",
+            "4": "Rowing machines",
+            "5": "Home gyms"
+        }
+    },
+    {
+        "imgSrc": "./images/specialty.jpg",
+        "title": "Specialty Fitness Equipment",
+        "price": "from $100",
+        "rating": "⭐⭐⭐⭐",
+        "learnMore" : "#", 
+        "features": {
+            "1": "Pilates reformers",
+            "2": "Yoga wheels",
+            "3": "Balance boards",
+            "4": "Foam rollers",
+            "5": "Massage guns"
+        }
+    },
+    {
+        "imgSrc": "./images/boxing.webp",
+        "title": "Boxing and Combat Training Gear",
+        "price": "$50-$200",
+        "rating": "⭐⭐⭐⭐⭐",
+        "learnMore" : "#", 
+        "features": {
+            "1": "Boxing gloves",
+            "2": "Punching bags",
+            "3": "Speed bags",
+            "4": "Mouthguards",
+            "5": "Hand wraps"
+        }
+    },
+    {
+        "imgSrc": "./images/cardio-equipment.jpg",
+        "title": "Cardio Equipment",
+        "price": "from $100",
+        "rating": "⭐⭐⭐⭐",
+        "learnMore" : "#", 
+        "features": {
+            "1": "Treadmills",
+            "2": "Ellipticals",
+            "3": "Exercise bikes",
+            "4": "Rowing machines",
+            "5": "Stair climbers"
+        }
+    },
+    {
+        "imgSrc": "./images/foam.jpg",
+        "title": "Recovery and Mobility Products",
+        "price": "$100 onwards",
+        "rating": "⭐⭐⭐⭐⭐",
+        "learnMore" : "#", 
+        "features": {
+            "1": "Foam rollers",
+            "2": "Massage balls",
+            "3": "Resistance Bands for Mobility",
+            "4": "Stretching Straps",
+            "5": "Inversion Tables"
+        }
+    },
+    {
+        "imgSrc": "./images/yoga.jpg",
+        "title": "Yoga & Pilates Accessories",
+        "price": "$50 onwards",
+        "rating": "⭐⭐⭐⭐",
+        "learnMore" : "#", 
+        "features": {
+            "1": "Yoga mats",
+            "2": "Blocks",
+            "3": "Straps",
+            "4": "Bolsters",
+            "5": "Wheels"
+        }
+    }
+]

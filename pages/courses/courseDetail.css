@@ -1,0 +1,806 @@
+@font-face {
+    font-family: nav;
+    font-weight: 600;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+    font-family: new;
+    font-weight: 400;
+    src: url(./NeueHaasDisplayLight.ttf);
+}
+@font-face {
+    font-family: new;
+    font-weight: 200;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: new;
+    /* cursor: none; */
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease;
+}
+/* Custom Cursor */
+.cursor{
+    height: 25px;
+    width: 25px;
+    border: 2px solid black;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999999;
+    transition: top linear 0.2s, left linear 0.2s;
+    pointer-events: none;
+}
+#main{
+    position: relative;
+    z-index: 10;
+    background: #EFEAE3;
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    background: #EFEAE3;
+    position: relative;
+    padding: 0 2vw;
+    padding-bottom: 3vw;
+}
+nav{
+    padding: 2vw 0vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    justify-content: space-between;
+}
+nav img{
+    height: 68px;
+    width: 200px;
+    object-fit: contain;
+    object-position: center;
+}
+nav h3{
+    display: none;
+}
+.nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+.nav-part2 h4{
+    border: 1px solid rgb(156, 156, 156);
+    padding: 0.75vw 1.5vw;
+    border-radius: 50px;
+    font-weight: 300;
+    cursor: pointer;
+    position: relative;
+    color: black;
+    font-size: 18px;
+    overflow: hidden;
+    transition: all ease 0.4s;
+    font-family: new; 
+    /* font-family: 'Gilroy', sans-serif; */
+}
+
+.nav-part2 h4::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: black;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+}
+.nav-part2 h4:hover::after{
+    bottom: 0;
+    border-radius: 0;
+}
+.nav-part2 h4 a{
+    text-decoration: none;
+    color: black;
+    z-index: 1;
+    position: relative;
+}
+.nav-part2 h4:hover a{
+    color: white;
+}
+.page1-with{
+    color: #FE3E0E;
+}
+.hero-shape{
+    position: absolute;
+    height: 36vw;
+    width: 46vw;
+    right: 0;
+    top: 75vh;
+    z-index: -1;
+}
+.hero-1{
+    height: 100%;
+    width: 100%;
+    background: royalblue;
+    background: #FE3E0E;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+}
+.hero-2{
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(#FE3E0E, #fe4a0e);
+    border-radius: 50%;
+    filter: blur(25px);
+    position: absolute;
+    animation-name: anime2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.hero-3{
+    height: 30vw;
+    width: 30vw;
+    background: royalblue;
+    background: linear-gradient(#FE3E0E, #fe4a0e);
+    border-radius: 50%;
+    filter: blur(25px);
+    position: absolute;
+    animation-name: anime1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes anime1{
+    from{
+        transform: translate(55%, -8%);
+    }
+    to{
+        transform: translate(0%, 10%);
+    }
+}
+@keyframes anime2{
+    from{
+        transform: translate(5%, -8%);
+    }
+    to{
+        transform: translate(-20%, 30%);
+    }
+}
+
+.courseBG{
+    width: 100%;
+    height: 80vh;
+    /* border: 10px solid pink; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 2vw;
+    position: relative;
+    background-size: cover
+
+}
+.courseBG #title{
+    color: white;
+    font-size: 6vw;
+}
+.courseBG .scroll-box{
+    position: absolute;
+    /* border: 2px solid black; */
+    /* border-radius: 50%; */
+    height: 100px;
+    width: 200px;
+    z-index: 1;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 5px; */
+}
+.scroll-box h2{
+    text-decoration: underline;
+}
+.scroll{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.scroll ion-icon{
+    font-size: 50px;
+    transition: 0.5s ease;
+    color: black;
+}
+.scroll ion-icon:hover{
+    transform: translateY(-10px);
+}
+
+.courseDetails{
+    width: 100%;
+    height: 70vh;
+    /* border: 2px solid black; */
+    padding: 1vw 4vw;
+    transition: 0.5 ease;
+}
+.courseDetails .features{
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    margin-bottom: 70px;
+}
+.courseDetails p{
+    font-size: 2vw;
+    margin-top: 5px;
+    font-weight: 600;
+}
+.buttons{
+    width: 50%;
+    /* border: 2px solid black; */
+    height: 60px;
+    padding: 0 7vw;
+    display: flex;
+    gap: 20px;
+    /* margin-bottom: 20px; */
+}
+.buttons .enroll{
+    width: 200px;
+    font-weight: 600;
+    font-size: 1.25vw;
+    letter-spacing: 2px;
+    background: #fe4a0e;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.enroll::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #EFEAE3;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s ease;
+}
+.enroll:hover::after{
+    top: 0;
+}
+.enroll:hover{
+    color: black;
+    border: 2px solid black;
+}
+.buttons .cart{
+    width: 200px;
+    font-weight: 600;
+    font-size: 1.25vw;
+    letter-spacing: 2px;
+    background: white;
+    border: 2px solid #FE3E0E;
+    border-radius: 5px;
+    color: #FE3E0E;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.cart::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #FE3E0E;
+    top: 0;
+    left: -100%;
+    z-index: -1;
+    transition: 0.5s ease;
+}
+.cart:hover::after{
+    left: 0;
+}
+.cart:hover{
+    color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+
+#footer{
+    position: sticky;
+    z-index: 9;
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    background: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1vw 3vw;
+    pointer-events: auto;
+    /* z-index: 1; */
+}
+#footer h1{
+    font-size: 15vw;
+    pointer-events: auto;
+}
+.footer-div{
+    height: 20vh;
+    margin-bottom: 100px;
+    padding: 0 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-bottom{
+    border-top: 1px solid #dadada;
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+}
+.footer-links{
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-links a{
+    font-size: 2.5vw;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.footer-links a:hover{
+    color: rgb(161, 161, 161);
+    transform: translateY(-6px);
+}
+
+.get-email{
+    height: 100%;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.get-email p{
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+.get-email input{
+    height: 30px;
+    width: 90%;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #dadada;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.get-email input::placeholder{
+    color: #a3a3a3;
+    font-size: 1vw;
+}
+.get-email ion-icon{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    --ionicon-stroke-width: 5px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.get-email ion-icon:hover{
+    transform: translateY(-5px);
+}
+.copyright p{
+    font-size: 1.25vw;
+    font-weight: 600;
+}
+.location{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25vw;
+    font-weight: 600;
+}
+.instagram a{
+    font-size: 1.25vw;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.instagram a::before{
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    height: 1.5px;
+    width: 100%;
+    background: white;
+    transform: scale(0);
+    transform-origin: left;
+    transition: 0.8s ease ;
+}
+.instagram a:hover::before{
+    transform: scale(1);
+    transform-origin: left;
+}
+.linkedin a{
+    font-size: 1.25vw;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.linkedin a::before{
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    height: 1.5px;
+    width: 100%;
+    background: white;
+    transform: scale(0);
+    transform-origin: left;
+    transition: 0.5s ease;
+}
+.linkedin a:hover::before{
+    transform: scale(1);
+    transform-origin: left;
+}
+#full-scr{
+    height: 100vh;
+    width: 100%;
+    background: #00000070;
+    position: fixed;
+    top: -150%;
+    z-index: 99;
+    transition: 0.5s ease;
+}
+.full-div1{
+    height: 60%;
+    width: 100%;
+    background: #EFEAE3;
+    color: black;
+    /* border-radius: 30px; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+.full-div1 h1{
+    z-index: 9;
+    color: black;
+    /* display: block; */
+}
+
+@media (max-width: 600px){
+    .cursor{
+        display: none;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .page1{
+        min-height: 100vh;
+        width: 100vw;
+        padding: 0 2vw;
+    }
+    nav{
+        padding: 8vw 5vw;
+        background: #EFEAE3;
+        /* padding: 0 5vw; */
+        /* position: sticky; */
+    }
+    nav img{
+        height: 9vh;
+        transition: 0.5s ease;
+    }
+    nav h3{
+        display: initial;
+        height: 10vw;
+        padding: 0vw 8vw;
+        width: 25vw;
+        border: 1px solid #ababab;
+        border-radius: 50px;
+        font-size: 4vw;
+        font-weight: 200;
+        padding-left: 10vw;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+    .firstline{
+        height: 2px;
+        width: 25px;
+        background: #000;
+        transition: 0.5s ease;
+        /* position: absolute; */
+        /* display: none; */
+    }
+    .secondline{
+        height: 2px;
+        width: 25px;
+        background: #000;
+        transition: 0.5s ease;
+        /* display: none; */
+    }
+    .firstline.active{
+        rotate: -45deg;
+        gap: 0;
+        position: absolute;
+        /* transform: translate(-50%, -50%); */
+    }
+    .secondline.active{
+        rotate: 45deg;
+        gap: 0;
+        /* transform: translate(-50%, -50%); */
+    }
+    .cross{
+        height: 30px;
+        width: 30px;
+        position: relative;
+        /* outline: auto; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .nav-part2{
+        display: none;
+    } 
+    .page1{
+        padding: 0 2vw;
+        padding-right: 5.5vw;   
+    }
+    .courseBG{
+        align-items: center;
+        justify-content: center;
+        height: 65vh;
+    }
+    .courseBG #title{
+        color: white;
+    }
+    .scroll-box h2{
+        color: white;
+    }
+
+    .scroll ion-icon{
+        color: white;
+    }
+    
+    .courseDetails{
+        height: 70vh;
+        /* border: 2px solid black; */
+        padding: 2vw 5vw;
+    }
+    .courseDetails .features{
+        font-size: 10vw;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .courseDetails p{
+        font-size: 7vw;
+    }
+    .buttons{
+        width: 100%;
+        /* border: 2px solid black; */
+        padding: 0 12vw;
+        display: flex;
+        align-items: flex-start;
+        /* gap: 20px; */
+        /* margin-top: 20px; */
+        height: 200px;
+    }
+    .buttons .enroll{
+        font-size: 4.25vw;
+        height: 60px;
+    }
+    .buttons .cart{
+        font-size: 4.25vw;
+        height: 60px;
+    }
+
+    #footer{
+        position: sticky;
+        z-index: 9;
+        height: 80vh;
+        width: 100%;
+        bottom: 0;
+        background: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 1vw 3vw;
+        pointer-events: auto;
+    }
+    #footer h1{
+        font-size: 15vw;
+        pointer-events: auto;
+    }
+    .footer-div{
+        height: 30vh;
+        width: 100%;
+        margin-bottom: 100px;
+        /* padding: 0 2vw; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer-bottom{
+        border-top: 1px solid #dadada;
+        height: 12vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: white;
+    
+    }
+    .footer-links{
+        height: 100%;
+        width: 100%;
+    }
+    .footer-links a{
+        font-size: 6.5vw;
+        font-weight: 700;
+        line-height: 8vw;
+    }
+    
+    .get-email{
+        min-height: 10vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 50px;
+        justify-content: center;
+        position: relative;
+    }
+    .get-email p{
+        font-size: 4.5vw;
+        font-weight: 500;
+    }
+    .get-email input{
+        height: 30px;
+        width: 100%;
+        background: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #dadada;
+        color: white;
+        padding: 1.5vw 0;
+        margin-top: 10px;
+    }
+    .get-email input::placeholder{
+        font-size: 4vw;
+    }
+    .get-email ion-icon{
+        font-size: 8vw;
+    }
+    .copyright p{
+        font-size: 3.25vw;
+        font-weight: 400;
+    }
+    .location{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        font-size: 3.25vw;
+        font-weight: 400;
+    }
+    .instagram a{
+        font-size: 3.25vw;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+        position: relative;
+    }
+    .instagram a::before{
+        content: '';
+        position: absolute;
+        bottom: -6px;
+        height: 1.5px;
+        width: 100%;
+        background: white;
+        transform: scale(0);
+        transform-origin: left;
+        transition: 0.8s ease ;
+    }
+    .instagram a:hover::before{
+        transform: scale(1);
+        transform-origin: left;
+    }
+    .linkedin a{
+        font-size: 3.25vw;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+        position: relative;
+    }
+    .linkedin a::before{
+        content: '';
+        position: absolute;
+        bottom: -6px;
+        height: 1.5px;
+        width: 100%;
+        background: white;
+        transform: scale(0);
+        transform-origin: left;
+        transition: 0.5s ease;
+    }
+    .linkedin a:hover::before{
+        transform: scale(1);
+        transform-origin: left;
+    }
+    .full-div1{
+        padding: 0vw 4vw;
+    }
+    .full-div1 h1{
+        color: black;
+        z-index: 1000;
+        display: initial;
+        font-size: 12vw;
+    }
+    .menu-links{
+        padding-top: 110px;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column; 
+        cursor: pointer;
+    }
+    .menu-links a{
+        text-decoration: none;
+        color: #000;
+    }
+}

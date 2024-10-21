@@ -19,8 +19,6 @@ window.addEventListener('mousemove', (e) => {
   const x = e.clientX - cursor.offsetWidth / 2;
   const y = e.clientY - cursor.offsetHeight /2;
   cursor.style.transform = `translate(${x}px, ${y}px)`
-    // cursor.style.left = `${e.x}px`;
-    // cursor.style.top =  `${e.y}px`;
 })
 
 // Hover Active
@@ -96,6 +94,45 @@ btnPopup.addEventListener('click', (e) => {
 iconClose.addEventListener('click', () => {
   wrapper.classList.remove('active-popup');
 })
+
+// Show and hide password
+const eye = document.querySelector('.eye')
+const input = document.querySelector('.passwordInput')
+eye.addEventListener('click', () => {
+    if(input.type === 'password'){
+      input.type = 'text'
+      eye.name = 'eye-off-outline'
+    }else{
+      input.type = 'password'
+      eye.name = 'eye-outline'
+    }
+});
+// For register
+const eye1 = document.querySelector('.eye1')
+const input1 = document.querySelector('.passwordInput1')
+eye1.addEventListener('click', () => {
+    if(input1.type === 'password'){
+      input1.type = 'text'
+      eye1.name = 'eye-off-outline'
+    }else{
+      input1.type = 'password'
+      eye1.name = 'eye-outline'
+    }
+});
+// For register confirm password
+// For register
+const eye2 = document.querySelector('.eye2')
+const input2 = document.querySelector('.passwordInput2')
+eye2.addEventListener('click', () => {
+    if(input2.type === 'password'){
+      input2.type = 'text'
+      eye2.name = 'eye-off-outline'
+    }else{
+      input2.type = 'password'
+      eye2.name = 'eye-outline'
+    }
+});
+
 
 // SwiperJS
 const swiperAnimation = () => {
@@ -178,12 +215,12 @@ setTimeout(() => {
 }, 3600);
 setTimeout(() => {
   loader.style.display = 'none'
-}, 4200);
+}, 4200); //4200
 
 // Responsive FOr elems
 const resElem = document.querySelectorAll('.elem')
 const src = document.querySelectorAll('.elem img')
-console.log(src)
+// console.log(src)
 resElem.forEach((elems) => {
     // Get the 'data-image' attribute value from the current '.elem' element
     const image = elems.getAttribute('data-image');

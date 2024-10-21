@@ -29,7 +29,6 @@ html, body{
     height: 25px;
     width: 25px;
     border: 2px solid black;
-    /* background: black; */
     top: 0;
     left: 0;
     border-radius: 50%;
@@ -169,6 +168,7 @@ nav img{
     border-bottom: 1px solid #0000003c;
     padding-bottom: 3.75vw;
 }
+
 .left h3{
     width: 28vw;
     line-height: 2vw;
@@ -583,6 +583,14 @@ nav img{
     border-bottom: 2px solid #162938;
     margin: 30px 0;
 }
+.eye{
+    position: absolute;
+    right: 35px;
+    font-size: 1.5vw;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
 
 .input-box label {
     position: absolute;
@@ -679,6 +687,10 @@ nav img{
 
 .login-register p a:hover {
     text-decoration: underline;
+}
+
+.logout{
+    display: none;
 }
 
 
@@ -847,6 +859,8 @@ nav img{
     border: none;
     border-bottom: 1px solid #dadada;
     color: white;
+    font-weight: 600;
+    letter-spacing: 1.5px;
 }
 .get-email input::placeholder{
     color: #a3a3a3;
@@ -942,6 +956,7 @@ nav h3{
     align-items: flex-end;
     justify-content: center;
     flex-direction: column;
+    /* position: fixed; */
 
 }
 .full-div1 h1{
@@ -1035,6 +1050,7 @@ nav h3{
         justify-content: center;
         gap: 10px;
         cursor: pointer;
+        /* position: fixed; */
     }
     .firstline{
         height: 2px;
@@ -1586,5 +1602,11 @@ nav h3{
         justify-content: center;
         flex-direction: column; 
         cursor: pointer;
+    }
+    .menu-links a{
+        text-decoration: n0ne;
+    }
+    .wrapper{
+        z-index: 100;
     }
 }
