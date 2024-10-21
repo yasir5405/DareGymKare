@@ -1241,7 +1241,7 @@ nav h3{
         border-bottom: none;
         display: flex;
         align-items: flex-start;
-        justify-content: space-between;
+        justify-content: center;
         flex-direction: column;
         padding: 0 2vw;
         overflow: hidden;
@@ -1347,7 +1347,7 @@ nav h3{
         margin-left: 35px;
     }
     .texts1 p{
-        font-size: 3.25vw;
+        font-size: 3.75vw;
     }
     .page4right{
         width: 100%;
@@ -1604,7 +1604,7 @@ nav h3{
         cursor: pointer;
     }
     .menu-links a{
-        text-decoration: n0ne;
+        text-decoration: none;
     }
     .wrapper{
         z-index: 100;

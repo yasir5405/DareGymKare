@@ -595,17 +595,27 @@ nav h3{
         position: relative;
         z-index: 10;
     }
+    .left{
+        /* border: 2px solid black; */
+        width: 100%;
+        /* text-align: center; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .left h3{
         width: 80%;
         line-height: 5vw;
         font-size: 4.4vw;
+        text-align: center;
     }
     .right{
         /* border: 2px solid black; */
         width: 100%;
     }
     .right video{
-        height: 150px;
+        height: 100%;
+        width: 100%;
     }
     .hero-shape{
         position: absolute;

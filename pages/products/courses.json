@@ -2,7 +2,7 @@
     {
         "imgSrc": "./images/apparel.jpg",
         "title": "Fitness Apparel",
-        "price": "$10 - $20",
+        "price": "<ion-icon name='wallet-outline'></ion-icon> $10 - $20",
         "rating": "⭐⭐⭐⭐⭐",
         "learnMore" : "#",
         "features": {
@@ -16,7 +16,7 @@
     {
         "imgSrc": "./images/equipment.avif",
         "title": "Workout Equipment",
-        "price": "$100",
+        "price": "<ion-icon name='wallet-outline'></ion-icon> $100",
         "rating": "⭐⭐⭐⭐",
         "learnMore" : "#",
         "features": {
@@ -30,7 +30,7 @@
     {
         "imgSrc": "./images/supplement.avif",
         "title": "Supplements & Nutrition",
-        "price": "$50-$70",
+        "price": "<ion-icon name='wallet-outline'></ion-icon> $50-$70",
         "rating": "⭐⭐⭐⭐",
         "learnMore" : "#",
         "features": {
@@ -44,7 +44,7 @@
     {
         "imgSrc": "./images/accessory.jpg",
         "title": "Gym Accessories",
-        "price": "$10-$40",
+        "price": "<ion-icon name='wallet-outline'></ion-icon> $10-$40",
         "rating": "⭐⭐⭐⭐⭐",
         "learnMore" : "#", 
         "features": {
@@ -58,7 +58,7 @@
     {
         "imgSrc": "./images/merch.webp",
         "title": "Branded Merchandise",
-        "price": "$50-$100",
+        "price": "<ion-icon name='wallet-outline'></ion-icon> $50-$100",
         "rating": "⭐⭐⭐⭐⭐",
         "learnMore" : "#",
         "features": {
@@ -72,7 +72,7 @@
     {
         "imgSrc": "./images/wellness.jpg",
         "title": "Health & Wellness Products",
-        "price": "$50-$100",
+        "price": "<ion-icon name='wallet-outline'></ion-icon> $50-$100",
         "rating": "⭐⭐⭐⭐",
         "learnMore" : "#",
         "features": {
@@ -86,7 +86,7 @@
     {
         "imgSrc": "./images/home-gym.webp",
         "title": "Advanced Home Gym Equipment",
-        "price": "$100-$1000",
+        "price": "<ion-icon name='wallet-outline'></ion-icon> $100-$1000",
         "rating": "⭐⭐⭐⭐",
         "learnMore" : "#",
         "features": {
@@ -100,7 +100,7 @@
     {
         "imgSrc": "./images/specialty.jpg",
         "title": "Specialty Fitness Equipment",
-        "price": "from $100",
+        "price": "<ion-icon name='wallet-outline'></ion-icon> from $100",
         "rating": "⭐⭐⭐⭐",
         "learnMore" : "#", 
         "features": {
@@ -114,7 +114,7 @@
     {
         "imgSrc": "./images/boxing.webp",
         "title": "Boxing and Combat Training Gear",
-        "price": "$50-$200",
+        "price": "<ion-icon name='wallet-outline'></ion-icon> $50-$200",
         "rating": "⭐⭐⭐⭐⭐",
         "learnMore" : "#", 
         "features": {
@@ -128,7 +128,7 @@
     {
         "imgSrc": "./images/cardio-equipment.jpg",
         "title": "Cardio Equipment",
-        "price": "from $100",
+        "price": "<ion-icon name='wallet-outline'></ion-icon> from $100",
         "rating": "⭐⭐⭐⭐",
         "learnMore" : "#", 
         "features": {
@@ -142,7 +142,7 @@
     {
         "imgSrc": "./images/foam.jpg",
         "title": "Recovery and Mobility Products",
-        "price": "$100 onwards",
+        "price": "<ion-icon name='wallet-outline'></ion-icon> $100 onwards",
         "rating": "⭐⭐⭐⭐⭐",
         "learnMore" : "#", 
         "features": {
@@ -156,7 +156,7 @@
     {
         "imgSrc": "./images/yoga.jpg",
         "title": "Yoga & Pilates Accessories",
-        "price": "$50 onwards",
+        "price": "<ion-icon name='wallet-outline'></ion-icon> $50 onwards",
         "rating": "⭐⭐⭐⭐",
         "learnMore" : "#", 
         "features": {

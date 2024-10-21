@@ -107,7 +107,7 @@ menu.addEventListener('click', () => {
     flag = 1;
   }else{
     navImg.style.opacity = 1;
-    full.style.top = '-100%';
+    full.style.top = '-150%';
     flag = 0;
   }
 })

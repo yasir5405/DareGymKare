@@ -3,7 +3,7 @@
         "imgSrc": "./images/body-building.jpg",
         "title": "Bodybuilding Classes",
         "duration": "<ion-icon name='stopwatch-outline'></ion-icon> 60–75 minutes per day",
-        "trainerName": "Mark Johnson",
+        "trainerName": "<ion-icon name='person-outline'></ion-icon> Mark Johnson",
         "learnMore" : "#",
         "features": {
             "1": "Strength training",
@@ -15,9 +15,9 @@
     },
     {
         "imgSrc": "./images/powerlifting.jpg",
-        "title": "Powerlifting & Olympic Lifting",
+        "title": "Powerlifting & Lifting",
         "duration": "<ion-icon name='stopwatch-outline'></ion-icon> 90 minutes per day",
-        "trainerName": "Sarah Thompson",
+        "trainerName": "<ion-icon name='person-outline'></ion-icon> Sarah Thompson",
         "learnMore" : "#",
         "features": {
             "1": "Squat",
@@ -29,9 +29,9 @@
     },
     {
         "imgSrc": "./images/functional-strength-training.jpg",
-        "title": "Functional Strength Training",
+        "title": "Functional Training",
         "duration": "<ion-icon name='stopwatch-outline'></ion-icon> 45–60 minutes per day",
-        "trainerName": "David Lewis",
+        "trainerName": "<ion-icon name='person-outline'></ion-icon> David Lewis",
         "learnMore" : "#",
         "features": {
             "1": "Bodyweight exercises",
@@ -45,7 +45,7 @@
         "imgSrc": "./images/crossfit.jpg",
         "title": "CrossFit/HIIT",
         "duration": "<ion-icon name='stopwatch-outline'></ion-icon> 45 minutes per day",
-        "trainerName": "Jessica Rivera",
+        "trainerName": "<ion-icon name='person-outline'></ion-icon> Jessica Rivera",
         "learnMore" : "#", 
         "features": {
             "1": "High-intensity interval training",
@@ -59,7 +59,7 @@
         "imgSrc": "./images/indoor-cycling.jpg",
         "title": "Spin/Indoor Cycling",
         "duration": "<ion-icon name='stopwatch-outline'></ion-icon> 45 minutes per day",
-        "trainerName": "Emily Clark",
+        "trainerName": "<ion-icon name='person-outline'></ion-icon> Emily Clark",
         "learnMore" : "#",
         "features": {
             "1": "Cardio",
@@ -73,7 +73,7 @@
         "imgSrc": "./images/zumba.jpg",
         "title": "Zumba/Dance Cardio",
         "duration": "<ion-icon name='stopwatch-outline'></ion-icon> 60 minutes per day",
-        "trainerName": "Maria Garcia",
+        "trainerName": "<ion-icon name='person-outline'></ion-icon> Maria Garcia",
         "learnMore" : "#",
         "features": {
             "1": "Latin dance",
@@ -87,7 +87,7 @@
         "imgSrc": "./images/hiit-cardio.jpg",
         "title": "HIIT Cardio",
         "duration": "<ion-icon name='stopwatch-outline'></ion-icon> 30 minutes (Express Class)",
-        "trainerName": "Brian Adams",
+        "trainerName": "<ion-icon name='person-outline'></ion-icon> Brian Adams",
         "learnMore" : "#",
         "features": {
             "1": "High-intensity interval training",
@@ -101,7 +101,7 @@
         "imgSrc": "./images/running-clubs.jpg",
         "title": "Treadmill/Running Clubs",
         "duration": "<ion-icon name='stopwatch-outline'></ion-icon> 60 minutes per day",
-        "trainerName": "Ryan Peterson",
+        "trainerName": "<ion-icon name='person-outline'></ion-icon> Ryan Peterson",
         "learnMore" : "#", 
         "features": {
             "1": "Cardio",
@@ -113,9 +113,9 @@
     },
     {
         "imgSrc": "./images/yoga.jpg",
-        "title": "Yoga (Vinyasa, Hatha, etc.)",
+        "title": "Yoga (Vinyasa, etc.)",
         "duration": "<ion-icon name='stopwatch-outline'></ion-icon> 60–90 minutes per day",
-        "trainerName": "Alicia Patel",
+        "trainerName": "<ion-icon name='person-outline'></ion-icon> Alicia Patel",
         "learnMore" : "#", 
         "features": {
             "1": "Flexibility",
@@ -129,7 +129,7 @@
         "imgSrc": "./images/pilates.webp",
         "title": "Pilates",
         "duration": "<ion-icon name='stopwatch-outline'></ion-icon> 50 minutes per day",
-        "trainerName": "Rachel Kim",
+        "trainerName": "<ion-icon name='person-outline'></ion-icon> Rachel Kim",
         "learnMore" : "#", 
         "features": {
             "1": "Core strength",
@@ -143,7 +143,7 @@
         "imgSrc": "./images/taichi.jpg",
         "title": "Tai Chi or Qigong",
         "duration": "<ion-icon name='stopwatch-outline'></ion-icon> 60 minutes per day",
-        "trainerName": "Michael Wong",
+        "trainerName": "<ion-icon name='person-outline'></ion-icon> Michael Wong",
         "learnMore" : "#", 
         "features": {
             "1": "Meditation",
@@ -155,9 +155,9 @@
     },
     {
         "imgSrc": "./images/stretching.jpg",
-        "title": "Stretching/Flexibility Classes",
+        "title": "Flexibility Classes",
         "duration": "<ion-icon name='stopwatch-outline'></ion-icon> 45 minutes per day",
-        "trainerName": "Lisa Morgan",
+        "trainerName": "<ion-icon name='person-outline'></ion-icon> Lisa Morgan",
         "learnMore" : "#", 
         "features": {
             "1": "Flexibility",
